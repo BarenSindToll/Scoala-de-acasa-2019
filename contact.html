@@ -118,7 +118,8 @@
 
 		<div id="fh5co-contact" class="fh5co-section-gray">
 			<div class="container">
-				<form action="#">
+
+
 					<div class="row animate-box">
 						<div class="col-md-6">
 							<h3 class="section-title">Cand si unde suntem:</h3>
@@ -132,30 +133,33 @@
 						</div>
 						<div class="col-md-6">
 							<div class="row">
+								<form name="contact-form" action="send-mail.php" method="POST">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nume">
+										<input type="text" id="field_name" name= "sender_name" class="form-control" placeholder="Nume">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email">
+										<input type="text" id="field_email" name="sender_email" class="form-control" placeholder="Email">
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mesaj"></textarea>
+										<textarea name="sender_message" class="form-control" id="field_message" cols="30" rows="7" placeholder="Mesaj"></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<input type="submit" value="Trimite Mesaj" class="btn btn-primary">
+										<input type="submit" name="send_message" value="Trimite Mesaj" class="btn btn-primary">
 									</div>
 								</div>
+									</form>
 							</div>
 						</div>
 					</div>
-				</form>
+
+
 			</div>
 		</div>
 		<!-- END fh5co-contact -->
